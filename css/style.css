@@ -19,6 +19,7 @@ body{
 }
 a{
 	text-decoration: none !important;
+	text-transform: capitalize;
 }
 a:hover{
 	color: rgb(162, 192, 190) !important;
@@ -85,4 +86,12 @@ consultation
 	background-position: cover;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+}
+/*==============
+cta
+===============*/
+.cta-bg{
+	background-color: rgb(52, 58, 64);
+	color: grey !important;
+	margin-top: 100px !important;
 }
