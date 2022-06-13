@@ -28,7 +28,7 @@ a:hover{
 nav section
 ===============*/
 .nav-setting{
-	margin-left:  35%;
+	margin-left:  30%;
 	/*padding: 10px;*/
 }
 .nav-spacing{
@@ -46,7 +46,7 @@ banner and carousel
 ===============*/
 .banner-bg{
 	background-color: rgb(249, 248, 250);
-	/*height: 800px;*/
+
 }
 .btn-fill{
 	background-color: rgb(162, 192, 190) !important;
@@ -94,4 +94,5 @@ cta
 	background-color: rgb(52, 58, 64);
 	color: grey !important;
 	margin-top: 100px !important;
+	padding: 30px;
 }
