@@ -1,0 +1,66 @@
+/*font-family: 'Lato', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+/*
+author: Obiakor Uchechukwu;
+Title:  NaijaDogs Project;
+Date:  6/11/2022;
+*/
+
+body{
+	/*background-image: url('../images/dog.jpg');*/
+	/*background-color: #000;*/
+	font-family: 'Montserrat','Poppins','Ubuntu'sans-serif;;
+	
+}
+/*h1 h2 h3 h4 h5 h6{
+	color: white !important;
+
+}
+p{
+	color: lightgrey;
+}*/
+/*==============
+nav section
+===============*/
+.nav-setting{
+	margin-left:  35%;
+	/*padding: 10px;*/
+}
+.nav-spacing{
+	margin-right: 20px;
+}
+.nav-spacing:hover{
+	color: rgb(162, 192, 190) !important;
+}
+.navbar-brand{
+	font-size: 1.5rem !important;
+
+}
+/*==============
+banner and carousel
+===============*/
+.banner-bg{
+	background-color: rgb(249, 248, 250);
+	/*height: 800px;*/
+}
+.btn-fill{
+	background-color: rgb(162, 192, 190) !important;
+	color: #fff !important;
+}
+.btn-fill:hover{
+	background-color: #000 !important;
+}
+/*==============
+background choose
+===============*/
+.choose{
+	background-color: rgb(162, 192, 190) !important;
+	color: #fff !important;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
