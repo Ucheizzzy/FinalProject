@@ -17,13 +17,12 @@ body{
 	font-family: 'Montserrat','Poppins','Ubuntu'sans-serif;;
 	
 }
-/*h1 h2 h3 h4 h5 h6{
-	color: white !important;
-
+a{
+	text-decoration: none !important;
 }
-p{
-	color: lightgrey;
-}*/
+a:hover{
+	color: rgb(162, 192, 190) !important;
+}
 /*==============
 nav section
 ===============*/
@@ -76,4 +75,14 @@ background comment
 .dogsTransform{
 	transform: scale(1.4);
 	transition: all 0.5s ease-in-out; 
+}
+/*==============
+consultation
+===============*/
+.bgConsult{
+	background-image: url("../images/dog3.jpg");
+	background-attachment: fixed;
+	background-position: cover;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
