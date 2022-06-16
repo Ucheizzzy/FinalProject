@@ -20,94 +20,204 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Merriweather&family=Montserrat:wght@300&family=Pacifico&family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 		<!-- favicon -->
 		<link rel="icon" type="image/x-icon" href="images/dgico.ico">
+		
 		<style type="text/css">
-			*{
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-				font-family: 'Montserrat','Poppins','Ubuntu',sans-serif;
-
+			.sidebar-nav{
+				width:  270px;
 			}
-			.profile-image{
-				width: 30px;
-				height: 30px;
-				/*object-fit: cover;*/
-				border-radius: 50%;
+			.sidebar-link{
+				display: flex;
+				align-items: center;
+			}
+			.sidebar-link .right-icon{
+				display: inline-block;
+			}
+			@media (min-width: 992px){
+				.sidebar-nav{
+					transform: none !important;
+					visibility: visible !important;
+					margin-top: 85px;
+				}
+				main{
+					margin-left: 270px;
+				}
 			}
 		</style>
 
 	</head>
 	<body>
-		<!-- admin page-->
-		<!-- navbar -->
-		<div class="container-fluid ">
-				<div class="row ">
-					<div class="col-md-12  navbar d-flex align-middle">
-						<i class="fas fa-bars mx-3"></i>
-						<h3 class="mt-2">Dashboard</h3>
-						<i class="fas fa-search ms-auto mx-5"></i>
-						<img src="images/vet1.jpg" class="profile-image img-fluid mx-5">
-						<p class="mx-5 mt-3">Admin</p>
-					</div>
-				</div>
-			
-		</div>
+		<!-- navbar section -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			  <div class="container-fluid">
 
-		<!-- sidebar -->
-		<div class="container-fluid">
-			
-		</div>
-
-		<!-- sidebar -->
-		<input type="checkbox" name="toggle" id="toggle" value="">
-		<label class="side-toggle" for="toggle"></label>
-
-		<div class="sidebar">
-			<div class="sidebar-menu">
-				<i class="fas fa-clipboard-list"></i>
-				<p>Overview</p>
-			</div>
-			<div class="sidebar-menu">
-				<i class="fas fa-users"></i>
-				<p>Teams</p>
-			</div>
-			<div class="sidebar-menu">
-				<i class="fas fa-credit-card"></i>
-				<p>Payment</p>
-			</div>
-			<div class="sidebar-menu">
-				<i class="fas fa-chart-line"></i>
-				<p>Statistics</p>
-			</div>
-			<div class="sidebar-menu">
-				<i class="fas fa-id-card"></i>
-				<p>Contact</p>
-			</div>
-			<div class="sidebar-menu">
-				<i class="fas fa-cog"></i>
-				<p>Settings</p>
-			</div>
-
-		</div>
-		<!-- main dashboard -->
-		<main>
-			<div class="dashboard-container">
-				<!--4 cards top -->
-				<div class="card total1">
-					<div class="info">
-						
-					</div>
-				</div>
-				<div class="card total2"></div>
-				<div class="card total3"></div>
-				<div class="card total4"></div>
-				<!-- 2 card tops -->
-				<div class="card detail"></div>
-				<div class="card customer"></div>
-			</div>
-		</main>
-
+			  	<!-- offcanvas trigger -->
+			  	<button class="btn me-2 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+				 <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample"></span>
+				</button>
+			  	<!-- end of navbar trigger -->
+			    <a class="navbar-brand fw-bolder text-uppercase me-auto" href="#">NaiaDogs</a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			     
+			      <form class="d-flex ms-auto">
+			       <div class="input-group my-3 my=lg-0">
+						  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+						  <button class="btn btn-primary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+						</div>Search</button>
+			      </form>
+			       <ul class="navbar-nav  mb-2 mb-lg-0">
+			       
+			        <li class="nav-item dropdown">
+			          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            <i class="fas fa-user"></i>
+			          </a>
+			          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+			            <li><a class="dropdown-item" href="#">Action</a></li>
+			            <li><a class="dropdown-item" href="#">Another action</a></li>
+			            <li><hr class="dropdown-divider"></li>
+			            <li><a class="dropdown-item" href="#">Something else here</a></li>
+			          </ul>
+			        </li>
+			        
+			      </ul>
+			     
+			    </div>
+			  </div>
+		</nav>
 		
+		<!-- off canvas menu -->
+			
+				
+
+				<div class="offcanvas offcanvas-start sidebar-nav bg-dark text-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+				  
+				  <div class="offcanvas-body p-0">
+				    <nav class="navbar-dark">
+				    	<ul class="navbar-nav">
+				    		<ll>
+				    			<div class="text-muted small fw-bolder text-uppercase px-3">CORE</div>
+				    		</li>
+				    		<li>
+				    			<a href="#" class="nav-link px-3 active">
+				    				<span class="me-2">
+				    				<i class="fas fa-dashboard"></i>
+				    				</span>
+				    				<span>Dashboard</span>
+				    			</a>
+				    		</li>
+
+				    		<li class="my-4">
+				    			<hr class="dorpdown-divided">
+				    		</li>
+				    		<ll>
+				    			<div class="text-muted small fw-bolder text-uppercase px-3">Interface</div>
+				    		</li>
+
+				    		<li>
+				    			<a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+								    <span class="me-2">
+				    				<i class="fas fa-clipboard-list"></i>
+				    				</span >
+				    				<span>Layouts</span>
+				    				<span class="right-icon ms-auto">
+				    					<i class="fas fa-chevron-down"></i>
+				    				</span>
+								  </a>
+								  
+								  <div class="collapse" id="collapseExample">
+									  <div class="">
+									  	<ul class="navbar-nav ps-3">
+									  		<li>
+									  			<a href="" class="nav-link px-3">
+									  			<span class="me-2">
+							    				<i class="fas fa-clipboard-list"></i>
+							    				</span >
+							    				<span>nested links</span>
+							    				</a>
+									  		</li>
+									  	</ul>
+									   
+									  </div>
+								</div>
+				    		</li>
+				    	</ul>
+				    </nav>
+				  </div>
+			</div>
+
+			<!-- main body -->
+			<main class="mt-5 pt-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Dashboard</h2>
+						</div>
+						<div class="row">
+							<div class="col-md-3 mb-3">
+							<div class="card text-white bg-primary mb-3 ms-2 h-100" >
+							  <div class="card-header">Header</div>
+							  <div class="card-body">
+							    <h5 class="card-title">Primary card title</h5>
+							    <p class="card-text">Some quick example text to build on the card title and make up the .</p>
+							  </div>
+						</div>
+						</div>
+						<div class="col-md-3 mb-3">
+							<div class="card text-white bg-success mb-3 ms-3 h-100">
+							  <div class="card-header">Header</div>
+							  <div class="card-body">
+							    <h5 class="card-title">Primary card title</h5>
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							  </div>
+						</div>
+						</div>
+						<div class="col-md-3 mb-3">
+							<div class="card text-white bg-warning mb-3 ms-3 h-100">
+							  <div class="card-header">Header</div>
+							  <div class="card-body">
+							    <h5 class="card-title">Primary card title</h5>
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							  </div>
+						</div>
+						</div>
+						<div class="col-md-3 mb-3">
+							<div class="card text-white bg-danger mb-3 ms-3 h-100">
+							  <div class="card-header">Header</div>
+							  <div class="card-body">
+							    <h5 class="card-title">Primary card title</h5>
+							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							  </div>
+						</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<h2>Data table</h2>
+						<div class="col-md-12">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<td>user_id</td>
+										<td>user name</td>
+										<td>Phone Number</td>
+										<td>Email</td>
+										<td>Address</td>
+										<td>State</td>
+										<td>Dog name</td>
+										<td>clinic name</td>
+										<td>vet license</td>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				
+			</main>
+
 			
 
 		
@@ -118,50 +228,6 @@
 		<script type="text/javascript" language="javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" language="javascript">
 			// aordion effect
-			$(document).ready(function(){
-				// $('#toggle').click(function(){
-				// 	// $('p').css("display", "none");
-				// 	$(".sidebar").css({width: "70px", display: "none"});
-
-				// })
-				
-
-				
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				// $('h1').mouseover(function(){
-				// 	(this).animate({
-				// 		margin:'10%',
-				// 		opacity:'0.5',
-				// 		margin:'10px'
-				// 	},2000)
-				// })
-				//  $('button').one('click', function(){
-				// 	$('h1').animate({opacity:0.5})
-				// 	$('h1').animate({margin:'10%'})
-				// 	$(this).click(function(){
-				// 		$('h1').animate({margin:0})
-				// 		$('h1').slideToggle().animate({margin:0});
-				// 	})
-				// })
-			})
-
-			// var dog = document.getElementsByClassName("dogsPhoto")
-			// for(var i =0 ; i < dog.length; i++){
-			// 	console.log(dog);
-			// }
 			
 
 		</script>
