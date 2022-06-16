@@ -68,7 +68,7 @@ background comment
 	color: #fff !important;
 /*	margin-left: 10px;
 	margin-bottom: 10px;*/
-	transform: scale(1.1);
+	/*transform: scale(1.1);*/
 }
 .stickybg{
 	background-image: url("../images/dog7.jpg");
@@ -79,8 +79,8 @@ background comment
 	/*height: 500px;*/
 }
 .dogsTransform{
-	transform: scale(1.4);
-	transition: all 0.5s ease-in-out; 
+	/*transform: scale(1.4);*/
+	/*transition: all 0.5s ease-in-out; */
 }
 /*==============
 consultation
@@ -100,4 +100,16 @@ cta
 	color: grey !important;
 	margin-top: 100px !important;
 	padding: 30px;
+}
+
+/*==============
+contact us
+===============*/
+.contact-us{
+	background-image: url("../images/banner.jpg");
+	background-attachment: scroll;
+	background-position: cover;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	min-height: 400px;
 }
